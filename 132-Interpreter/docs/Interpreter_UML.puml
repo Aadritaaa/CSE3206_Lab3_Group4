@@ -1,0 +1,48 @@
+@startuml
+title Role-Based Access Control - Interpreter Pattern
+
+interface Expression {
+  + interpret(context: Context): bool
+}
+
+class RoleExpression {
+  - role: string
+  + interpret(context: Context): bool
+}
+
+class AndExpression {
+  - left: Expression
+  - right: Expression
+  + interpret(context: Context): bool
+}
+
+class OrExpression {
+  - left: Expression
+  - right: Expression
+  + interpret(context: Context): bool
+}
+
+class Context {
+  - roles: Set<string>
+  + addRole(role: string): void
+  + hasRole(role: string): bool
+}
+
+class Parser {
+  - input: string
+  - position: size_t
+  + parse(): Expression
+}
+
+Expression <|.. RoleExpression
+Expression <|.. AndExpression
+Expression <|.. OrExpression
+
+AndExpression o-- Expression : left/right
+OrExpression o-- Expression : left/right
+
+RoleExpression ..> Context : uses
+AndExpression ..> Context : interprets
+OrExpression ..> Context : interprets
+Parser ..> Expression : builds
+@enduml

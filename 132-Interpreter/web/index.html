@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Access Control Interpreter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<header class="hero">
+<div>
+<p class="eyebrow">CSE 3206 · SOFTWARE ENGINEERING SESSIONAL</p>
+<h1>Access Control Interpreter</h1>
+<p class="subtitle">A visual demonstration of the Interpreter Design Pattern.</p>
+</div>
+<div class="badge">Behavioral Pattern</div>
+</header>
+
+<section class="card">
+<h2>1. Select User Roles</h2>
+<p class="hint">Choose the roles assigned to the user.</p>
+<div class="roles">
+<label><input type="checkbox" value="ADMIN"> ADMIN</label>
+<label><input type="checkbox" value="EDITOR"> EDITOR</label>
+<label><input type="checkbox" value="MODERATOR"> MODERATOR</label>
+<label><input type="checkbox" value="USER"> USER</label>
+</div>
+</section>
+
+<section class="card">
+<h2>2. Enter Access Rule</h2>
+<p class="hint">Supported syntax: role names, AND, OR, and parentheses.</p>
+<textarea id="ruleInput">ADMIN AND (EDITOR OR MODERATOR)</textarea>
+<div class="examples">
+<button data-rule="ADMIN">ADMIN</button>
+<button data-rule="ADMIN AND EDITOR">ADMIN AND EDITOR</button>
+<button data-rule="EDITOR OR MODERATOR">EDITOR OR MODERATOR</button>
+<button data-rule="ADMIN AND (EDITOR OR MODERATOR)">ADMIN AND (EDITOR OR MODERATOR)</button>
+</div>
+<button id="evaluateBtn" class="evaluate">Evaluate Rule</button>
+</section>
+
+<section id="resultCard" class="card result hidden">
+<div id="resultIcon" class="icon">✓</div>
+<div><p class="eyebrow">INTERPRETER RESULT</p><h2 id="resultTitle">ACCESS GRANTED</h2><p id="resultMessage"></p></div>
+</section>
+
+<section class="card">
+<h2>Evaluation Trace</h2>
+<pre id="trace">Select roles and evaluate a rule.</pre>
+</section>
+
+<footer><span>Group 4 · Interpreter Pattern</span><span>RUET · CSE 3206</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

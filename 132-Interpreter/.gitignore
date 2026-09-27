@@ -1,0 +1,11 @@
+*.exe
+*.out
+*.o
+*.obj
+interpreter
+interpreter_tests
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
