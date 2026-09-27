@@ -1,0 +1,28 @@
+{
+  "name": "user-registration-facade",
+  "version": "1.0.0",
+  "description": "User Registration Workflow demonstrating the Façade Design Pattern in Node.js & Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "facade-pattern",
+    "design-patterns",
+    "express",
+    "mongodb",
+    "bcrypt",
+    "jwt",
+    "nodemailer"
+  ],
+  "author": "Roll 131 - Group 4",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.5.0",
+    "nodemailer": "^6.9.13"
+  }
+}
