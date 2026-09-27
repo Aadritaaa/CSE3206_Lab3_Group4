@@ -6,11 +6,11 @@
 [![Node.js](https://img.shields.io/badge/Node.js-v24+-brightgreen)](https://nodejs.org)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Pattern](https://img.shields.io/badge/pattern-Decorator%20(GOF)-orange)]()
-[![Live Demo](https://img.shields.io/badge/demo-GitHub%20Pages-7c3aed)](https://aadritaaa.github.io/pixel-wrap/)
+[![Live Demo](https://img.shields.io/badge/demo-GitHub%20Pages-7c3aed)](https://aadritaaa.github.io/CSE3206_Lab3_Group4/)
 
 ## 🌐 Live Demo
 
-**[https://aadritaaa.github.io/pixel-wrap/](https://aadritaaa.github.io/pixel-wrap/)**
+**[https://aadritaaa.github.io/CSE3206_Lab3_Group4/](https://aadritaaa.github.io/CSE3206_Lab3_Group4/)**
 
 An interactive browser demo of the Decorator pattern . 
 Upload any image, stack effects in any order, watch the canvas update live and download the result.
