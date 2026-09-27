@@ -31,7 +31,7 @@ jobs:
       - name: Upload web/ directory as Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./web"     # serve only the web/ subfolder
+          path: "./130-Decorator/web"     # serve only the 130-Decorator web/ subfolder
 
       - name: Deploy to GitHub Pages
         id: deployment
